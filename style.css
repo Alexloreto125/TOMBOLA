@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+body {
+  outline: none;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#tbltombola {
+  border-collapse: collapse;
+  height: 25rem;
+  width: 25rem;
+  text-align: center;
+  font-size: 23pt;
+  cursor: pointer;
+}
+#tombola {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.cella {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 2px;
+  line-height: 40px;
+}
+
+button {
+  font-size: 16px;
+  margin-top: 10px;
+}
+td {
+  height: 20%;
+  width: 20%;
+}
