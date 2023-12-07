@@ -1,4 +1,4 @@
-const table = document.querySelector("#tblTombola");
+const table = document.querySelector("#tbltombola");
 const letter = document.querySelectorAll(".lettere");
 
 let numeri = Array.from({ length: 90 }, (_, index) => index + 1);
@@ -11,9 +11,9 @@ const shuffle = (arr) => {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
-    [arr[currentIndex], arr[randomIndex]] = [
-      arr[randomIndex],
-      arr[currentIndex],
+    [numeri[currentIndex], numeri[randomIndex]] = [
+      numeri[randomIndex],
+      numeri[currentIndex],
     ];
   }
   return numeri;
@@ -41,4 +41,15 @@ for (i = 0; i < 5; i++) {
   }
 }
 
+const celle = document.querySelectorAll(".main-table");
+celle.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.classList.add("linea-check");
+  });
+});
+
+const posizioneVincente = [
+  [0, 1, 2, 3, 4, 5, 6],
+  [7, 8, 9, 10, 11, 12, 13],
+];
 //! DA FINIRE
